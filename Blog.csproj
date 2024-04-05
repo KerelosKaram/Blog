@@ -1,0 +1,404 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Home\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="bundleconfig.json" />
+    <_ContentIncludedByDefault Remove="Views\Home\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.25" />
+	  <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+    <PackageReference Include="PhotoSauce.MagicScaler" Version="0.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Auth\Login.cshtml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<Folder Include="wwwroot\content\blog\" />-->
+	  <Content Update="wwwroot/content/blog/*.*" CopyToPublishDirectory="Never" />
+	  <Content Update="wwwroot/lib/**/*.*" CopyToPublishDirectory="Never" />
+	  <Content Update="wwwroot/lib/**/dist/**/*.*" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\Trumbowyg-main\.bowerrc" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.editorconfig" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.gitattributes" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.github\FUNDING.yml" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.github\ISSUE_TEMPLATE.md" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.gitignore" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.jshintrc" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.npmignore" />
+    <None Include="wwwroot\lib\Trumbowyg-main\BACKERS.md" />
+    <None Include="wwwroot\lib\Trumbowyg-main\CONTRIBUTORS.md" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ar.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ar.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\az.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\az.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\bg.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\bg.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\bn.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\bn.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\by.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\by.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ca.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ca.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\cs.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\cs.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\da.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\da.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\de.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\de.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\el.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\el.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\es.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\es.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\es_ar.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\es_ar.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\et.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\et.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\fa.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\fa.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\fi.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\fi.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\fr.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\fr.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\he.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\he.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\hr.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\hr.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\hu.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\hu.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\id.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\id.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\it.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\it.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ja.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ja.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ko.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ko.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\lt.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\lt.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\mn.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\mn.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\my.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\my.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\nb.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\nb.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\nl.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\nl.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ph.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ph.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\pl.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\pl.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\pt.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\pt.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\pt_br.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\pt_br.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ro.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ro.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\rs.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\rs.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\rs_latin.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\rs_latin.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ru.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ru.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\sk.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\sk.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\sl.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\sl.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\sq.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\sq.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\sv.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\sv.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\th.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\th.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\tr.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\tr.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ua.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\ua.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\vi.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\vi.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\zh_cn.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\zh_cn.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\zh_tw.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\langs\zh_tw.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\allowtagsfrompaste\trumbowyg.allowtagsfrompaste.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\allowtagsfrompaste\trumbowyg.allowtagsfrompaste.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\base64\trumbowyg.base64.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\base64\trumbowyg.base64.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\cleanpaste\trumbowyg.cleanpaste.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\cleanpaste\trumbowyg.cleanpaste.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\colors\trumbowyg.colors.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\colors\trumbowyg.colors.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\colors\ui\sass\trumbowyg.colors.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\emoji\trumbowyg.emoji.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\emoji\trumbowyg.emoji.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\emoji\ui\sass\trumbowyg.emoji.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\fontfamily\trumbowyg.fontfamily.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\fontfamily\trumbowyg.fontfamily.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\fontsize\trumbowyg.fontsize.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\fontsize\trumbowyg.fontsize.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\giphy\trumbowyg.giphy.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\giphy\trumbowyg.giphy.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\giphy\ui\sass\trumbowyg.giphy.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\highlight\trumbowyg.highlight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\highlight\trumbowyg.highlight.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\highlight\ui\sass\trumbowyg.highlight.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\history\trumbowyg.history.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\history\trumbowyg.history.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\indent\trumbowyg.indent.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\indent\trumbowyg.indent.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\insertaudio\trumbowyg.insertaudio.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\insertaudio\trumbowyg.insertaudio.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\lineheight\trumbowyg.lineheight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\lineheight\trumbowyg.lineheight.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\mathml\trumbowyg.mathml.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\mathml\trumbowyg.mathml.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\mathml\ui\sass\trumbowyg.mathml.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\mention\trumbowyg.mention.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\mention\trumbowyg.mention.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\mention\ui\sass\trumbowyg.mention.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\noembed\trumbowyg.noembed.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\noembed\trumbowyg.noembed.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\pasteembed\trumbowyg.pasteembed.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\pasteembed\trumbowyg.pasteembed.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\pasteimage\trumbowyg.pasteimage.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\pasteimage\trumbowyg.pasteimage.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\preformatted\trumbowyg.preformatted.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\preformatted\trumbowyg.preformatted.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\resizimg\trumbowyg.resizimg.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\resizimg\trumbowyg.resizimg.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\ruby\trumbowyg.ruby.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\ruby\trumbowyg.ruby.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\specialchars\trumbowyg.specialchars.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\specialchars\trumbowyg.specialchars.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\specialchars\ui\sass\trumbowyg.specialchars.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\table\trumbowyg.table.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\table\trumbowyg.table.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\table\ui\sass\trumbowyg.table.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\template\trumbowyg.template.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\template\trumbowyg.template.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\upload\trumbowyg.upload.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\plugins\upload\trumbowyg.upload.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\trumbowyg.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\trumbowyg.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\ui\icons.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\dist\ui\sass\trumbowyg.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\.gitignore" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\.jshintrc" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\demos\js\highlight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\demos\js\loader.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\demos\js\runExampleCode.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\fonts\jetbrains-mono-regular.woff2" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\fonts\open-sans-light.woff2" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\fonts\open-sans-regular.woff2" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\fonts\open-sans-semibold.woff2" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\fonts\panton.woff2" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\gulpfile.mjs" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\beer.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\globe.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\introduction-customizable.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\introduction-html.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\introduction-lightweight.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\logo-doc.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\logo.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\js\main.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\js\vendor\highlight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\js\vendor\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\main.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_base.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_buttons.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_documentation.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_donate.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_font.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_footer.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_get-started.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_header.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_highlightjs-github.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_introduction.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_languages.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_normalize.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_plugins-packages.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_section.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_variables.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\yarn.lock" />
+    <None Include="wwwroot\lib\Trumbowyg-main\gulpfile.mjs" />
+    <None Include="wwwroot\lib\Trumbowyg-main\LICENSE" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\allowtagsfrompaste\trumbowyg.allowtagsfrompaste.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\base64\trumbowyg.base64.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\base64\ui\icons\base64.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\cleanpaste\trumbowyg.cleanpaste.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\colors\trumbowyg.colors.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\colors\ui\icons\back-color.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\colors\ui\icons\fore-color.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\colors\ui\sass\trumbowyg.colors.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\emoji\trumbowyg.emoji.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\emoji\ui\icons\emoji.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\emoji\ui\sass\trumbowyg.emoji.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\fontfamily\trumbowyg.fontfamily.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\fontsize\trumbowyg.fontsize.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\fontsize\ui\icons\fontsize.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\giphy\trumbowyg.giphy.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\giphy\ui\icons\giphy.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\giphy\ui\sass\trumbowyg.giphy.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\highlight\trumbowyg.highlight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\highlight\ui\icons\highlight.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\highlight\ui\sass\trumbowyg.highlight.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\history\trumbowyg.history.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\indent\trumbowyg.indent.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\indent\ui\icons\indent.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\indent\ui\icons\outdent.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\insertaudio\trumbowyg.insertaudio.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\insertaudio\ui\icons\insert-audio.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\lineheight\trumbowyg.lineheight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\lineheight\ui\icons\lineheight.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mathml\trumbowyg.mathml.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mathml\ui\icons\mathml.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mathml\ui\sass\trumbowyg.mathml.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mention\trumbowyg.mention.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mention\ui\icons\mention.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mention\ui\sass\trumbowyg.mention.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\noembed\trumbowyg.noembed.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\noembed\ui\icons\noembed.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\pasteembed\trumbowyg.pasteembed.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\pasteimage\trumbowyg.pasteimage.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\preformatted\trumbowyg.preformatted.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\preformatted\ui\icons\preformatted.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\resizimg\trumbowyg.resizimg.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\ruby\trumbowyg.ruby.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\ruby\ui\icons\ruby.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\specialchars\trumbowyg.specialchars.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\specialchars\ui\icons\special-chars.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\specialchars\ui\sass\trumbowyg.specialchars.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\trumbowyg.table.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\align-bottom.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\align-middle.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\align-top.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\col-delete.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\col-left.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\col-right.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\header-row.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\row-above.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\row-below.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\row-delete.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\table-border-color.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\table-cell-background-color.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\table-delete.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\table-merge.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\table-unmerge.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\table.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\sass\trumbowyg.table.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\template\trumbowyg.template.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\upload\trumbowyg.upload.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\upload\ui\icons\upload.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\README.md" />
+    <None Include="wwwroot\lib\Trumbowyg-main\sponsors\avot.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ar.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\az.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\bg.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\bn.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\by.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ca.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\cs.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\da.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\de.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\el.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\en.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\es.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\es_ar.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\et.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\fa.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\fi.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\fr.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\he.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\hr.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\hu.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\id.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\it.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ja.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ko.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\lt.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\mn.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\my.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\nb.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\nl.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ph.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\pl.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\pt.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\pt_br.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ro.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\rs.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\rs_latin.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ru.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\sk.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\sl.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\sq.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\sv.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\th.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\tr.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ua.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\vi.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\zh_cn.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\zh_tw.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\trumbowyg.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\blockquote.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\bold.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\close.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\create-link.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\del.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\em.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\fullscreen.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h1.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h2.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h3.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h4.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h5.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h6.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\horizontal-rule.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\insert-image.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\italic.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\justify-center.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\justify-full.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\justify-left.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\justify-right.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\link.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\ordered-list.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\p.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\redo.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\removeformat.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\strikethrough.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\strong.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\subscript.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\superscript.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\underline.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\undo.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\unlink.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\unordered-list.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\view-html.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\sass\trumbowyg.scss" />
+  </ItemGroup>
+
+</Project>
